@@ -1,6 +1,6 @@
 # A test-driven JS assessment
 
-Adapted from Rebecca Murphy's excellent JS-Assessment and copyrighted as such (see license below)
+Adapted from Rebecca Murphey's excellent JS-Assessment and copyrighted as such (see license below)
 
 directory of the repo, run:
 

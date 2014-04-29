@@ -5,7 +5,10 @@ if (typeof define !== 'function') { var define = require('amdefine')(module); }
 define(function() {
   return {
     indexOf : function(arr, item) {
-
+        var a;
+        a = [1,2,3];
+        // a.indexOf(a === 2);
+        a.indexOf === 2;
       
 
     },

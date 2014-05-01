@@ -9,33 +9,35 @@ if (typeof define !== 'function') { var define = require('amdefine')(module); }
  */
 
 define(function() {
-  var myObject;
+  // var myObject;
   return {
     globals : function() {
-      myObject = {
+      var myObject = {
         name : ("window")
       };
 
       return myObject;
     },
 
-    functions : function(flag) {
+    functions : function(flag) { //expression rather than declaration
       var getValue;
 
       if (flag) {
-        { return 'a'; }
+        getValue = function(){ return 'a'; }
       } else {
-        { return 'b'; }
+        getValue = function() { return 'b'; }
       }
 
       return getValue();
     },
 
-    parseInt : function(num) {
+    parseInt : function(num) { //ray-dex
       return parseInt(num, 10);
     },
 
     identity : function(val1, val2) {
+
+      return val1 === val2;
 
     }
   };

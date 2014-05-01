@@ -1,15 +1,16 @@
+//testing: 
+
 if (typeof define !== 'function') { var define = require('amdefine')(module); }
 
 define(function() {
   return {
     indexOf : function(arr, item) {
 
-    return arr.indexOf(item);
+        return arr.indexOf(item);
 
-    },
+},
 
     sum : function(arr) {
-
         var sum = 0;
 
         for(var i = 0; i< arr.length; i++){
@@ -17,24 +18,21 @@ define(function() {
         }
        
        return sum;
-      
 
-    },
+},
 
     remove : function(arr, item) {
-        
+
         var newArr = [];
 
-        for(var i= 0; i < arr.length; i++) {
+        for(var in= 0; i < arr.length; i++) {
             if(arr[i] !== item) {
             newArr.push(arr[i]);
         }
     }
             
-      return newArr;
-
-        
-    },
+      return newArr;  
+},
 
     removeWithoutCopy : function(arr, item) {
 
@@ -81,19 +79,19 @@ define(function() {
     },
 
     square : function(arr) {
+    //     var newArr =[];
 
-        var newArr =[];
+    //     for(var i = 0, len=arr.length; i< len; i++){
+    //         newArr.push(arr[i] * arr[i]);
+    //     }
 
-        for(var i = 0; i < arr.length; i++){
-            newArr.push(arr[i] * arr[i]);
-        }
+    //     return newArr;
 
-        return newArr;
-
-    },
+    // },
 
     findAllOccurrences : function(arr, target) {
 
     }
   };
+};
 });
